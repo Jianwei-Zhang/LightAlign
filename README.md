@@ -47,18 +47,14 @@ You can validate LightAlign using the public dataset **SRR32655838** from NCBI S
 ### Run Command & Expected Results
 1.  **Run LightAlign** on the dataset with the following command. It typically uses about **0.54 GB** of memory.
     ```bash
-    LightAlign.exe -i SRR32655838/SRR32655838.fasta -O SRR32655838 -d 75 -l 900
+    LightAlign.exe -i SRR32655838/SRR32655838.fasta -O [Output path] -d 75 -l 900
     ```
 2.  **Use the output for assembly** with tools like **Miniasm**. The following command shows how the results can be piped into the next step:
     ```bash
     miniasm -f SRR32655838.fasta SRR32655838.paf > output.gfa
     ```
-3.  **Final Assembly Metric**: When processing this dataset with the above LightAlign parameters followed by Miniasm, the contig **N50 in the resulting GFA file is typically around 3.11 Mb**.
+3.  **Final Assembly Metric**: When processing this dataset with the above LightAlign parameters followed by Miniasm, the contig **N50 in the resulting GFA file is typically around 3.11 Mb**.  (Parameters `-d 75` and `-l 900` are optimized for this specific dataset. Actual memory usage and N50 may vary slightly depending on the system and tool versions.)
 
-### Notes
-- Ensure sufficient disk space for the input and output files.  
-- Parameters `-d 75` and `-l 900` are optimized for this specific dataset.  
-- Actual memory usage and N50 may vary slightly depending on the system and tool versions.  
 ## Notes:
 LightAlign executes in 5 steps. Upon completion, "All steps done." will be displayed. The final output is the PAF file in the output path.
 In tests conducted so far, LightAlign consumes the same amount of memory and has roughly the same runtime on both Linux and Windows.  
