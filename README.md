@@ -42,7 +42,7 @@ LightAlign accepts the following command-line options:
 | `-d`   | INT     | DBA (Dynamic Bandwidth Adjustment). Adjust to around 80 when average HiFi read length is <10 kb. | 87 |  
 ## Quick Test Example
 
-You can validate LightAlign using the public dataset **SRR32655838** from NCBI SRA ([link](https://trace.ncbi.nlm.nih.gov/Traces/?run=SRR32655838)). The following command demonstrates a typical alignment operation and its expected outcome within a pipeline.
+You can validate LightAlign using the public dataset **SRR32655838**(PacBio HiFi data of Thalassospira sp. MIT1370) from NCBI SRA ([link](https://trace.ncbi.nlm.nih.gov/Traces/?run=SRR32655838)). The following command demonstrates a typical alignment operation and its expected outcome within a pipeline.
 
 ### Run Command & Expected Results
 1.  **Run LightAlign** on the dataset with the following command. It typically uses about **0.54 GB** of memory.
