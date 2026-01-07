@@ -24,7 +24,7 @@ LightAlign/src/preprocess_fasta.cpp \
 ```
 ## Tutorial
 ### LightAlign Basic Usage:  
-```LightAlign.exe -O [Output path for results and intermediate files] -i [Input file path, FASTA/FASTQ]```
+```LightAlign.exe -i [Input file path, FASTA/FASTQ] -O [Output path for results and intermediate files]```
 
 ### LightAlign Detailed Usage
 
@@ -46,6 +46,5 @@ In tests conducted so far, LightAlign consumes the same amount of memory and has
 
 ## Limitations
 Currently, LightAlign is limited to the assembly of HiFi reads.
-Despite its extremely low RAW usage, LightAlign is slower than current tools like minimap2.
 ## Contact
 For any questions or suggestions, please reach out to liujian_HZAU@outlook.com.
