@@ -40,6 +40,25 @@ LightAlign accepts the following command-line options:
 | `-e`   | FLOAT   | Maximum allowed error rate for alignments. | 0.02 |
 | `-g`   | INT     | Number of reads per group in the group alignment phase. Reducing this value lowers memory usage (current memory usage is consistently <1 GB for prokaryotic datasets). Keep default unless ultra-low memory is required. | 10200 |
 | `-d`   | INT     | DBA (Dynamic Bandwidth Adjustment). Adjust to around 80 when average HiFi read length is <10 kb. | 87 |  
+## Quick Test Example
+
+You can validate LightAlign using the public dataset **SRR32655838** from NCBI SRA ([link](https://trace.ncbi.nlm.nih.gov/Traces/?run=SRR32655838)). The following command demonstrates a typical alignment operation and its expected outcome within a pipeline.
+
+### Run Command & Expected Results
+1.  **Run LightAlign** on the dataset with the following command. It typically uses about **0.54 GB** of memory.
+    ```bash
+    LightAlign.exe -i SRR32655838/SRR32655838.fasta -O SRR32655838 -d 75 -l 900
+    ```
+2.  **Use the output for assembly** with tools like **Miniasm**. The following command shows how the results can be piped into the next step:
+    ```bash
+    miniasm -f SRR32655838.fasta SRR32655838.paf > output.gfa
+    ```
+3.  **Final Assembly Metric**: When processing this dataset with the above LightAlign parameters followed by Miniasm, the contig **N50 in the resulting GFA file is typically around 3.11 Mb**.
+
+### Notes
+- Ensure sufficient disk space for the input and output files.  
+- Parameters `-d 75` and `-l 900` are optimized for this specific dataset.  
+- Actual memory usage and N50 may vary slightly depending on the system and tool versions.  
 ## Notes:
 LightAlign executes in 5 steps. Upon completion, "All steps done." will be displayed. The final output is the PAF file in the output path.
 In tests conducted so far, LightAlign consumes the same amount of memory and has roughly the same runtime on both Linux and Windows.  
