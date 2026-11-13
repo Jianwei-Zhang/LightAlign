@@ -1,0 +1,66 @@
+{
+    "started_at_local":  "2026-11-08T15:41:20.2504232+08:00",
+    "finished_at_local":  "2026-11-08T15:42:33.9446700+08:00",
+    "compiler_kind":  "Zig C++",
+    "compiler_path":  "C:\\Users\\liuji\\Documents\\ChatGPT\\重新投稿\\.build_tools\\zig_verify\\zig-x86_64-windows-0.14.1\\zig.exe",
+    "compiler_version":  "0.14.1",
+    "command":  "\"C:\\Users\\liuji\\Documents\\ChatGPT\\重新投稿\\.build_tools\\zig_verify\\zig-x86_64-windows-0.14.1\\zig.exe\" \"c++\" \"-O2\" \"-std=c++17\" \"-fno-lto\" \"-D_FILE_OFFSET_BITS=64\" \"-DNOMINMAX\" \"-DWIN32_LEAN_AND_MEAN\" \"C:\\Users\\liuji\\Documents\\ChatGPT\\重新投稿\\LightAlign_Windows_largefiles_20261108\\src\\help.cpp\" \"C:\\Users\\liuji\\Documents\\ChatGPT\\重新投稿\\LightAlign_Windows_largefiles_20261108\\src\\step4_5.cpp\" \"C:\\Users\\liuji\\Documents\\ChatGPT\\重新投稿\\LightAlign_Windows_largefiles_20261108\\src\\step3.cpp\" \"C:\\Users\\liuji\\Documents\\ChatGPT\\重新投稿\\LightAlign_Windows_largefiles_20261108\\src\\step2.cpp\" \"C:\\Users\\liuji\\Documents\\ChatGPT\\重新投稿\\LightAlign_Windows_largefiles_20261108\\src\\step1.cpp\" \"C:\\Users\\liuji\\Documents\\ChatGPT\\重新投稿\\LightAlign_Windows_largefiles_20261108\\src\\functions.cpp\" \"C:\\Users\\liuji\\Documents\\ChatGPT\\重新投稿\\LightAlign_Windows_largefiles_20261108\\src\\MurmurHash3.cpp\" \"C:\\Users\\liuji\\Documents\\ChatGPT\\重新投稿\\LightAlign_Windows_largefiles_20261108\\src\\preprocess_fasta.cpp\" \"-o\" \"C:\\Users\\liuji\\Documents\\ChatGPT\\重新投稿\\LightAlign_Windows_largefiles_20261108\\build\\20261108_154120_e32fefa1\\LightAlign.exe\" \"-lpsapi\"",
+    "build_directory":  "C:\\Users\\liuji\\Documents\\ChatGPT\\重新投稿\\LightAlign_Windows_largefiles_20261108\\build\\20261108_154120_e32fefa1",
+    "executable":  "C:\\Users\\liuji\\Documents\\ChatGPT\\重新投稿\\LightAlign_Windows_largefiles_20261108\\bin\\LightAlign.exe",
+    "executable_sha256":  "148671ac10656b2e96de84f1697726f5ce6c68bc3eaad11e15034428deaf4c2f",
+    "source_files":  [
+                         {
+                             "file":  "f.h",
+                             "sha256":  "a1c13f1503803809144b87eae3ef753ce7f0faadc7d0cf311ebf55ebbbc7b72f"
+                         },
+                         {
+                             "file":  "functions.cpp",
+                             "sha256":  "1d07b0dfce658156b749b35c862bb3d7257ef9b4eab11eaa994202c89bc4452a"
+                         },
+                         {
+                             "file":  "globals.h",
+                             "sha256":  "a5ce5d8ec7269de30ea49930d42776866b191574f65059e46ac2439b6f17f26e"
+                         },
+                         {
+                             "file":  "help.cpp",
+                             "sha256":  "06bb3e4e07ff3adf39b5c5063187876573ae99e6a1f4a975d6acbbaf17bb3606"
+                         },
+                         {
+                             "file":  "lightalign_metrics.h",
+                             "sha256":  "577001a1dd39e7dc7fed4f469f37c51bc02987926bb1ee1385bbb4a7417c1520"
+                         },
+                         {
+                             "file":  "lightalign_threads.h",
+                             "sha256":  "db96c6ee0553032348387ac23b685e6d02a884f05b261b3963016d78b23dcb08"
+                         },
+                         {
+                             "file":  "MurmurHash3.cpp",
+                             "sha256":  "0dacff15bb78cde32f6877746965b8b8fc90f09c21b99ecfcc2ec58dd962d8c6"
+                         },
+                         {
+                             "file":  "MurmurHash3.h",
+                             "sha256":  "562f2741de584c19786174359de7fe8075a051205a2456f7926619d3930f99f1"
+                         },
+                         {
+                             "file":  "preprocess_fasta.cpp",
+                             "sha256":  "b0035e9a7c6ce9ee1e77523057806f5bbcdd4176864a2f790c102fc103a89113"
+                         },
+                         {
+                             "file":  "step1.cpp",
+                             "sha256":  "1a73b6ed1f49b955aaa1ba0ed13cd38e7845af07a4f76cad60bd4f73eec695d0"
+                         },
+                         {
+                             "file":  "step2.cpp",
+                             "sha256":  "a3efd28c1b86992fde4785dd8d03a929ecb42f612ebe819dfd6f509cd30e114f"
+                         },
+                         {
+                             "file":  "step3.cpp",
+                             "sha256":  "a4cc6fa1d016a51128dee4a3f11807255744942e5b39a63b80749696667e63ea"
+                         },
+                         {
+                             "file":  "step4_5.cpp",
+                             "sha256":  "aad34cd57c8b9c910f5e4537063b0397e6c422cb90e349c2af3c54b75db6546f"
+                         }
+                     ],
+    "help_check_passed":  true
+}
