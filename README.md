@@ -5,23 +5,22 @@ LightAlign is fully compliant with the C++17 language standard.
 ### windows system:
 To use LightAlign, download all the source code to your computer, place it in the same project, compile this project using a C++ IDE such as Visual Studio, and generate the executable (.exe) file to start using the tool; or you can also download LightAlign.exe to your computer.
 ### Linux system:
-One Compilation Example Using GCC 12.2.0:  
+
+Run the following commands from the repository root. A C++17-capable GCC compiler is required.
+
+```bash
+# Build
+bash linux/build_linux.sh
+
+# Run an example with 12 worker threads
+./linux/bin/LightAlign \
+    -i reads.fasta -O output_directory \
+    -g 10200 -w 30 -e 0.02 -d 87 -l 1200 -t 12
 ```
-g++ -std=c++17 \  
--isystem /public/home/software/opt/bio/software/GCC/12.2.0/include/c++/12.2.0 \  
--ILightAlign/include \  
-LightAlign/src/help.cpp \  
-LightAlign/src/step4_5.cpp \  
-LightAlign/src/step3.cpp \  
-LightAlign/src/step2.cpp \  
-LightAlign/src/step1.cpp \  
-LightAlign/src/functions.cpp \  
-LightAlign/src/MurmurHash3.cpp \  
-LightAlign/src/preprocess_fasta.cpp \  
--o LightAlign_executable \  
--pthread \  
--lstdc++fs  
-```
+
+Replace `reads.fasta` with your uncompressed input FASTA or FASTQ file and `output_directory` with a new output directory.
+
+The example uses an alignment-unit length of 1200 bp for the revised eukaryotic experiments. The revised prokaryotic experiments used `-l 840`.
 ## Tutorial
 ### LightAlign Basic Usage:  
 ```LightAlign.exe -i [Input file path, FASTA/FASTQ] -O [Output path for results and intermediate files]```
